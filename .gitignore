@@ -1,0 +1,11 @@
+node_modules
+.gitbackup/
+.backup/
+teach/
+teach2/
+project/
+dist/
+dist-compiler/
+workspace/
+selfcomp.js
+testuse.mjs

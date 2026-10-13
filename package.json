@@ -1,0 +1,29 @@
+{
+  "name": "whirlbench-compiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "bun src/selfcomp.js",
+    "start2": "bun src/selfcomp.js backend",
+    "testrun": "bun src/testuse.mjs",
+    "dist": "rollup -c",
+    "obfdist": " bun scripts/obfuscate-after-build.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "module",
+  "dependencies": {
+    "adm-zip": "^0.5.17",
+    "fs-extra": "^11.3.4",
+    "pinyin": "^4.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-terser": "^1.0.0",
+    "javascript-obfuscator": "^5.4.1",
+    "rollup": "^4.60.1"
+  }
+}
